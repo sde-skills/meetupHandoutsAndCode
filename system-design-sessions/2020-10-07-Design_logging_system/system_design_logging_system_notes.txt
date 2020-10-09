@@ -1,0 +1,33 @@
+Topic: Logging System
+Users: system
+
+Requirements:
+
+1. any service or system can send logs (write)
+2. service or systems can request logs based on filter(time, etc...) (read)
+3. public service
+4. Search 
+5. alarms and monitors(v2)
+6. dashboards (v2)
+7. Retention period
+8. throttling
+9. agents (v2)
+
+Non functional -
+
+1. eventual consistent, highly avialable
+2. PUT latency should be really quick
+3. GET - ok to have dealy (1 sec) with pagination
+
+
+Service: 
+
+- PutLogEntry
+-------------
+Client -> Log Entries -> Service -> Store that Log Entry in a data store
+- Kafka
+
+
+- GetLog(filters)
+--------------------
+Client -> GetLog(filters) -> Service -> Query the data store
