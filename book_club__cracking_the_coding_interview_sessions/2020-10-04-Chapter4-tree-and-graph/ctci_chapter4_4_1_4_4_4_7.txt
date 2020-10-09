@@ -1,0 +1,27 @@
+Chapter 4 : Trees And Graphs
+
+General Agenda :
+1. Brief Introduction
+2. Problem Discussion 
+
+
+Problem 1: 
+
+Given a directed Graph, design an algorithm to find out whether there is a route between the two nodes
+
+
+Problem 2 :
+Implement a function to check if the tree is balanced or not. // Binary tree
+Balancing : abs(height(leftSubtree) - height(rightSubtree)) <= 1
+
+
+Problem 3:
+Build Order : You are given a list of projects and list of dependencies. Find a build order in which will allow the projects to be built.
+  
+  // Flight [Delhi, Mumbai] [ "Mumbai, Bangalore]
+
+Example:
+
+projects : a,b,c,d,e,f
+dependencies: [(a,d), (f,b), (b,d), (f,a), (d,c)]
+Output : f,e,a,b,d,c
